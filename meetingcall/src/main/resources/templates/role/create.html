@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout.html}">
+<head>
+    <title>meeting call</title>
+</head>
+
+<body>
+<div layout:fragment="custom-content">
+   <form  th:object="${obj}" method="post" th:action="@{/role/create.jsf}">
+
+
+
+               <input type="text"  th:field="*{roleName}" required placeholder="Enter Role Name">
+
+
+       <button class="btn btn-success mr-2 float-right">Submit</button>
+       <button type="reset" class="btn btn-light mr-2 float-right">Reset</button>
+   </form>
+</div>
+</body>
+
+</html>

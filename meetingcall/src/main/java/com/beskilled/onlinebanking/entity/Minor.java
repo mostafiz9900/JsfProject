@@ -15,8 +15,47 @@ public class Minor {
     @Column(name = "remark", nullable = false)
     private String remark;
 
-    /*@OneToOne
+   @OneToOne
     @JoinColumn(name = "meeting_id", nullable = false)
     private Meeting meeting;
-*/
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getMeetingTitle() {
+        return meetingTitle;
+    }
+
+    public void setMeetingTitle(String meetingTitle) {
+        this.meetingTitle = meetingTitle;
+    }
+
+    public String getAgendaAction() {
+        return agendaAction;
+    }
+
+    public void setAgendaAction(String agendaAction) {
+        this.agendaAction = agendaAction;
+    }
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark;
+    }
+
+    public Meeting getMeeting() {
+        return meeting;
+    }
+
+    public void setMeeting(Meeting meeting) {
+        this.meeting = meeting;
+    }
 }

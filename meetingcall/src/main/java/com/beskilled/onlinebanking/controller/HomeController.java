@@ -7,12 +7,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HomeController {
     @GetMapping(value = "/")
     public String displayHome(){
-        return "layout";
+        return "index";
     }
-    @GetMapping(value = "/fo.jsf")
-    public String displayFooter(){
-        return "fragment/nav";
+    @GetMapping(value = "/roll-add.jsf")
+    public String displayAddRol(){
+        return "add-roll";
     }
+
+
+
 
 
 }
