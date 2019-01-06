@@ -36,4 +36,10 @@ public class RoleController {
         return "role/create";
 
     }
+    @PostMapping(value = "list.jsf")
+    public String getRolelist(Model model){
+        model.addAttribute("list", repo.findAll());
+        return "role/list";
+
+    }
 }

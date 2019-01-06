@@ -7,17 +7,16 @@
 </head>
 
 <body>
-<div layout:fragment="custom-content">
+<div layout:fragment="custom-content" class="col">
+<div class="col-3">
    <form  th:object="${obj}" method="post" th:action="@{/role/create.jsf}">
-
-
-
-               <input type="text"  th:field="*{roleName}" required placeholder="Enter Role Name">
-
-
+       <input type="text"  th:field="*{roleName}" required placeholder="Enter Role Name"><br><br>
        <button class="btn btn-success mr-2 float-right">Submit</button>
        <button type="reset" class="btn btn-light mr-2 float-right">Reset</button>
-   </form>
+    </form>
+</div>
+
+
 </div>
 </body>
 

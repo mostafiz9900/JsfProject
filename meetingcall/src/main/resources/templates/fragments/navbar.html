@@ -26,90 +26,28 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Role</a>
                     <ul class="sub-menu children dropdown-menu">
                         <li><i class="fa fa-puzzle-piece"></i><a href="/add-role.jsf" th:href="@{/add-role.jsf}">Add Role</a></li>
-                        <li><i class="fa fa-id-badge"></i><a href="edit-role.html">Edit Role</a></li>
+                        <li><i class="fa fa-id-badge"></i><a href="edit-role.html" th:href="@{/add-role.jsf}">Edit Role</a></li>
+                        <li><i class="fa fa-bars"></i><a href="role-list.html">Role list</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item-has-children dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Role</a>
+                    <ul class="sub-menu children dropdown-menu">
+                        <li><i class="fa fa-puzzle-piece"></i><a href="/role/create.jsf" th:href="@{/role/create.jsf}">Add Role</a></li>
+                        <li><i class="fa fa-id-badge"></i><a href="/role/list.jsf"  th:href="@{/role/list.jsf}">view Role</a></li>
                         <li><i class="fa fa-bars"></i><a href="role-list.html">Role list</a></li>
                     </ul>
                 </li>
                 <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>User</a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Meeting</a>
                     <ul class="sub-menu children dropdown-menu">
-                        <li><i class="fa fa-rub"></i><a href="add-user.html">Add User</a></li>
-                        <li><i class="fa fa-stack-exchange"></i><a href="edit-user.html">Edit User</a></li>
-                        <li><i class="fa fa-try"></i><a href="user-list.html">User List</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Designation</a>
-                    <ul class="sub-menu children dropdown-menu">
-                        <li><i class="menu-icon fa fa-th"></i><a href="add-designation.html">Add Designation</a></li>
-                        <li><i class="menu-icon fa fa-th"></i><a href="edit-designation.html">Edit Designation</a></li>
-                        <li><i class="menu-icon fa fa-th"></i><a href="designation-list.html">Designation List</a></li>
+                        <li><i class="fa fa-puzzle-piece"></i><a href="/meeting/create.jsf" >Add </a></li>
+                        <li><i class="fa fa-id-badge"></i><a href="/meeting/list.jsf"  >view List</a></li>
+                        <li><i class="fa fa-bars"></i><a href="role-list.html"> update list</a></li>
                     </ul>
                 </li>
 
-
-
-                <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Employees</a>
-                    <ul class="sub-menu children dropdown-menu">
-                        <li><i class="menu-icon fa fa-fort-awesome"></i><a href="add-employees.html">Add Employees</a></li>
-                        <li><i class="menu-icon ti-themify-logo"></i><a href="edit-employees.html">Edit Employees</a></li>
-                        <li><i class="menu-icon ti-themify-logo"></i><a href="employees-list.html">Employees List</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cutlery"></i>Crops</a>
-                    <ul class="sub-menu children dropdown-menu">
-                        <li><i class="menu-icon fa fa-fort-awesome"></i><a href="add-crops.html">Add Crops</a></li>
-                        <li><i class="menu-icon ti-themify-logo"></i><a href="edit-crops.html">Edit Crops</a></li>
-                        <li><i class="menu-icon ti-themify-logo"></i><a href="crops-list.html">Crops List</a></li>
-                    </ul>
-                </li>
-
-                <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bar-chart"></i>Sales</a>
-                    <ul class="sub-menu children dropdown-menu">
-                        <li><i class="menu-icon fa fa-line-chart"></i><a href="add-sales.html">Add Sales</a></li>
-                        <li><i class="menu-icon fa fa-area-chart"></i><a href="edit-sales.html">Edit Sales</a></li>
-                        <li><i class="menu-icon fa fa-pie-chart"></i><a href="sales-list.html">Sales List</a></li>
-                    </ul>
-                </li>
-
-                <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-area-chart"></i>Equipment</a>
-                    <ul class="sub-menu children dropdown-menu">
-                        <li><i class="menu-icon fa fa-map-o"></i><a href="add-equipment.html">Add Equipment</a></li>
-                        <li><i class="menu-icon fa fa-street-view"></i><a href="edit-equipment.html">Edit Equipment</a></li>
-                        <li><i class="menu-icon fa fa-street-view"></i><a href="equipment-list.html">Equipment List</a></li>
-                    </ul>
-                </li>
-
-                <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Insecticides</a>
-                    <ul class="sub-menu children dropdown-menu">
-                        <li><i class="menu-icon fa fa-sign-in"></i><a href="add-insecticides.html">Add Insecticides</a></li>
-                        <li><i class="menu-icon fa fa-sign-in"></i><a href="edit-insecticides.html">Edit Insecticides</a></li>
-                        <li><i class="menu-icon fa fa-paper-plane"></i><a href="insecticides-list.html">Insecticides List</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-pagelines"></i>Pesticides</a>
-                    <ul class="sub-menu children dropdown-menu">
-                        <li><i class="fa fa-puzzle-piece"></i><a href="add-pesticides.html">Add Pesticides</a></li>
-                        <li><i class="fa fa-id-badge"></i><a href="edit-pesticides.html">Edit Pesticides</a></li>
-                        <li><i class="fa fa-bars"></i><a href="pesticides-list.html">Pesticides List</a></li>
-
-                    </ul>
-                </li>
-                <li class="menu-item-has-children dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-pagelines"></i>Expenses</a>
-                    <ul class="sub-menu children dropdown-menu">
-                        <li><i class="fa fa-puzzle-piece"></i><a href="/add-expenses.jsf" th:href="@{/add-expenses.jsf}">Add Expenses</a></li>
-                        <li><i class="fa fa-id-badge"></i><a href="edit-pesticides.html">Edit Expenses</a></li>
-                        <li><i class="fa fa-bars"></i><a href="pesticides-list.html">Expenses List</a></li>
-
-                    </ul>
-                </li>
 
             </ul>
         </div><!-- /.navbar-collapse -->

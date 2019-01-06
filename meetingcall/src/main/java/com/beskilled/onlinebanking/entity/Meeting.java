@@ -9,7 +9,7 @@ import java.util.Set;
 public class Meeting {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
     @Temporal(TemporalType.DATE)
     private Date annDate;
     @Temporal(TemporalType.TIMESTAMP)
@@ -29,7 +29,7 @@ public class Meeting {
             inverseJoinColumns = @JoinColumn(name = "off_id"))
     private Set<Officer> officers;
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
